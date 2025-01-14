@@ -1,8 +1,8 @@
-const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
-const fs = require('fs');
-const config = require('./config.json');
-const data = require('./data.json');
+import { Client, LocalAuth, MessageMedia } from 'whatsapp-web.js';
+import qrcode from 'qrcode-terminal';
+import fs from 'fs';
+import config from './config.json';
+import data from './data.json';
 
 const client = new Client({
     authStrategy: new LocalAuth()
